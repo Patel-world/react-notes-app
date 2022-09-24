@@ -117,6 +117,7 @@ h4 {
   grid-template-columns: auto auto;
 }
 .add-button {
+  z-index: 99;
   background-color: #6495ed;
   border-radius: 50%;
   bottom: 80px;
