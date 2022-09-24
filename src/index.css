@@ -359,9 +359,10 @@ p.spc {
     font-size: x-large;
     font-weight: 900;
 }
-  .g3,.g6,.nheader{
-    grid-template-columns: 1fr;
-  }
+.g3, .g6, .nheader {
+  gap: 2em;
+  grid-template-columns: 1fr;
+}
   .hid{
     display: none !important;
   }
@@ -377,7 +378,8 @@ p.spc {
   padding: 1.5rem;
   grid-template-columns: 1fr;
   display: grid;
-  background-color: transparent;
+  background-color: white;
+  height: -moz-fit-content;
   height: fit-content;
   margin: 0px 1rem;
 }
@@ -399,12 +401,19 @@ p.spc {
 .g2 {
   height: fit-content;
 }
+.card {
+  gap: 2em;
+  display: grid;
+  background-color: #ffff;
+  padding: 20px 10px;
+  grid-template-columns: 1fr;
+}
 
 }
 
 
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 500px) 
   and (max-device-width: 738px) 
   
 { 
@@ -415,9 +424,10 @@ p.spc {
       font-size: x-large;
       font-weight: 900;
   }
-    .g3,.g6,.nheader{
-      grid-template-columns: 1fr 1fr;
-    }
+  .g3, .g6, .nheader {
+    gap: 3em 0em;
+    grid-template-columns: 1fr 1fr;
+}
     .hid{
       display: none !important;
     }
@@ -430,13 +440,14 @@ p.spc {
   }
   .grid21 {
     border-bottom: 1px solid #f1f3f4;
-    padding: 1.5rem;
-    grid-template-columns: 1fr 1fr;
+    /* padding: 0.5rem; */
+    grid-template-columns: 1fr;
     display: grid;
-    background-color: transparent;
+    background-color: white;
+    height: -moz-fit-content;
     height: fit-content;
-    margin: 0px 1rem;
-  }
+    /* margin: 0px 1rem; */
+}
   .qwer {
     background-color: #fbfaff;
     text-align: start;
